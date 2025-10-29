@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+
+body {
+  background: linear-gradient(120deg, #f6f9fc 0%, #e9efff 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header */
+.header-title {
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
+/* Card Hover Animation */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px !important;
+}
+
+.MuiCard-root:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #667eea, #764ba2);
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+footer a {
+  color: #ffe082;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(15px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.user-card {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.8rem;
+    padding: 40px 10px;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+}
+
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 1200px;
 }
