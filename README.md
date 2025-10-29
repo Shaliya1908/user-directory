@@ -2,46 +2,6 @@ live on
 
 http://shaliya1908.github.io/user-directory/
 
-> user-directory@0.1.0 predeploy
-> npm run build
-
-
-> user-directory@0.1.0 build
-> react-scripts build
-
-Creating an optimized production build...
-Compiled with warnings.
-
-[eslint] 
-src/components/UserCard.js
-  Line 2:49:  'Box' is defined but never used  no-unused-vars
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-File sizes after gzip:
-
-  117.38 kB  build/static/js/main.939ba736.js
-  1.77 kB    build/static/js/453.e654ebf3.chunk.js
-  264 B      build/static/css/main.e6c13ad2.css
-
-The project was built assuming it is hosted at /user-directory/.
-You can control this with the homepage field in your package.json.
-
-The build folder is ready to be deployed.
-
-Find out more about deployment here:
-
-  https://cra.link/deployment
-
-
-> user-directory@0.1.0 deploy
-> gh-pages -d build
-
-Published
-shaliya@shaliyas-MacBook-Air user-directory % 
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
